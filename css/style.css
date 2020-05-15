@@ -233,12 +233,24 @@ bLUE    : #004672
 .clients{
   min-width: 500px;
 }
+
+.clients h2{
+  color: #004672;
+  font-size: 3rem;
+  font-family:'Montserrat';
+  font-weight: bold;
+}
 /* End Clients */
 
 /* Start Projects */
 .projects{
   min-height: 600px;
-
+}
+.projects h2{
+  color: #004672;
+  font-size: 3rem;
+  font-family:'Montserrat';
+  font-weight: bold;
 }
 .project img{
   position: relative;
