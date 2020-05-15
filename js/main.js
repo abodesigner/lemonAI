@@ -5,7 +5,7 @@ $(document).ready(function () {
 
   $("#readmore").click(function () {
     $('html,body').animate({
-      scrollTop: $(".ourStory").offset().top
+      scrollTop: $(".aboutus").offset().top
     },
       'slow');
   });
