@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Description Meta Attribute -->
+    <meta name="description" content="lemonAll For Digital & software services" />
+
+    <!-- Keywords Meta Attribute -->
+    <meta name="keywords" content="degital, marketing, lemonAll, software services, cyber security" />
+
+    <!-- title -->
+    <title>lemonAll</title>
+
+    <!-- bootstrap css file -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+
+    <!-- FONTS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway&display=swap" />
+
+    <!-- SLICK SLIDER -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+
+    <!-- animate.css file -->
+    <link rel="stylesheet" href="css/animate.css" />
+
+    <!-- fontawesome lib -->
+    <link rel="stylesheet" href="css/all.css" />
+
+    <!-- custom style -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- media file for custom resopnsive -->
+    <link rel="stylesheet" href="css/media.css" />
+</head>
+
+<body>
+
+    <!-- Start Home Section -->
+    <section class="home-section">
+
+        <!-- Start Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="LemonAll Logo" class="img-fluid" width="200px">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ourStory.html">Our Story</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#services" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Services
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Digital Marketing</a>
+                            <a class="dropdown-item" href="#">Software Services</a>
+                            <a class="dropdown-item" href="#">Creative Services</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Cyber Security</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <!-- Button trigger modal -->
+                    <button class="btn btn-warning my-2 my-sm-0" type="button" data-toggle="modal"
+                        data-target="#modalForm">Request a Quote</button>
+                </form>
+
+                <!-- Modal -->
+                <div class="modal fade" id="modalForm">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <h5 class="modal-title text-capitalize">tell us what you need</h5>
+                                <button type=" button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
+                            <div class="modal-body">
+                                <form action="#" method="POST">
+                                    <div class="form-row">
+
+                                        <div class="form-group col-md-6">
+                                            <label for="name">Name:</label>
+                                            <input type="text" class="form-control" name="name" id="name">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="email">Email:</label>
+                                            <input type="email" class="form-control" name="email" id="email">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+
+                                        <div class="form-group col-md-6">
+                                            <label for="phone">Phone Number:</label>
+                                            <input type="text" class="form-control" name="phone" id="phone">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="company-name">Company Name:</label>
+                                            <input type="text" class="form-control" name="company-name"
+                                                id="company-name" placeholder="">
+                                        </div>
+                                        <div class="form-group col-md-12">
+                                            <label for="company-website">Website:</label>
+                                            <input type="text" class="form-control" name="company-website"
+                                                id="company-website" placeholder="http:www.example.com">
+                                        </div>
+                                        <div class="form-group col-md-12">
+                                            <label for="company-website">Can you tell your dream?:</label>
+                                            <textarea name="message" id="message" class="form-control"></textarea>
+                                        </div>
+                                        <div class="form-group form-check">
+                                            <input type="checkbox" class="form-check-input" id="subscribe">
+                                            <label class="form-check-label" for="subscribe">
+                                                Subscribe to our newsletter,
+                                                we share some useful tips and tricks for your business!</label>
+                                        </div>
+
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline-blue">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </nav>
+        <!-- End Navbar -->
+
+
+        <!-- Start Video Background -->
+        <div class="video-container">
+
+            <video autoplay loop muted>
+                <source src="lemon.mp4" type="video/mp4" />
+            </video>
+            <div class="dark-overlay"></div>
+            <div class="content">
+                <h1>PREDICT. CREATE. SECURE.</h1>
+                <p>LemonAI Agency Is More Powerful</p>
+
+                <p><span id="typed"></span></p>
+
+                <button id="readmore" class="btn btn-outline-secondary mt-5">read more</button>
+            </div>
+
+        </div>
+        <!-- Start Video Background -->
+    </section>
+    <!-- End Home Section -->
+
+    <!-- Start AboutUs Section -->
+    <div class="aboutus py-5 bg-light">
+        <div class="container">
+            <div class="d-flex justify-content-around">
+
+                <h2 class="text-capitalize font-weight-bold">what <br> is <br>lemonAI<span
+                        style="color: #fed401">?</span> </h2>
+
+                <div class="d-flex flex-column align-items-end">
+                    <p class="story lead ml-4">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ratione laudantium eum porro
+                        facere. Error iure blanditiis soluta! Sit, natus, sequi modi autem incidunt hic magni maiores
+                        maxime molestiae ullam repudiandae recusandae officiis repellat consequatur delectus vitae
+                        laborum et velit corrupti voluptatum? In, quo architecto.
+
+                    </p>
+
+                    <button class="btn btn-warning text-capitalize">live the dream</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Aboutus Section -->
+
+    <!-- Start Services Section -->
+    <div class="services py-4" id="services">
+        <h2 class="text-center text-capitalize mb-5">Our Ingredients</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="service text-center">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <img src="img/marketing_icon.png" width="100px" alt="Digital Marketing"
+                                    class="img-fluid">
+                                <h4 class="card-title text-capitalize mb-3">digital marketing</h4>
+                                <p class="card-text">Digital marketing is the component of marketing that utilizes
+                                    internet and online based digital technologies.</p>
+                                <a href="#" class="btn btn-outline-blue">read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="service text-center">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <img src="img/software_icon.png" width="100px" alt="Digital Marketing"
+                                    class="img-fluid">
+                                <h4 class="card-title text-capitalize mb-3">software services</h4>
+                                <p class="card-text">Digital marketing is the component of marketing that utilizes
+                                    internet and online based digital technologies.</p>
+                                <a href="#" class="btn btn-outline-blue">read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="service text-center">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <img src="img/security_icon.png" width="100px" alt="Digital Marketing"
+                                    class="img-fluid">
+                                <h4 class="card-title text-capitalize mb-3">cyber security</h4>
+                                <p class="card-text">Digital marketing is the component of marketing that utilizes
+                                    internet and online based digital technologies.</p>
+                                <a href="#" class="btn btn-outline-blue">read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="service text-center">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <img src="img/creative_icon.png" width="100px" alt="Digital Marketing"
+                                    class="img-fluid">
+                                <h4 class="card-title text-capitalize mb-3">Creative Services</h4>
+                                <p class="card-text">Digital marketing is the component of marketing that utilizes
+                                    internet and online based digital technologies.</p>
+                                <a href="#" class="btn btn-outline-blue">read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End Sevices Section -->
+
+    <!-- Start Clients Section -->
+    <div class="clients py-5 bg-warning">
+        <h2 class="text-center mb-5">Our Clients</h2>
+        <div class="container">
+            <div class="clients-list">
+                <div>
+                    <img src="img/c1.png" width="200" height="150" class="img-fluid" alt="">
+                </div>
+                <div>
+                    <img src="img/c2.png" width="200" height="150" class="img-fluid" alt="">
+                </div>
+                <div>
+                    <img src="img/c3.png" width="200" height="150" class="img-fluid" alt="">
+                </div>
+                <div>
+                    <img src="img/c4.png" width="200" height="150" class="img-fluid" alt="">
+                </div>
+                <div>
+                    <img src="img/c5.png" width="200" height="150" class="img-fluid" alt="">
+                </div>
+                <div>
+                    <img src="img/c6.png" width="200" height="150" class="img-fluid" alt="">
+                </div>
+                <div>
+                    <img src="img/c7.jpg" width="200" height="150" class="img-fluid" alt="">
+                </div>
+                <div>
+                    <img src="img/c8.png" width="200" height="150" class="img-fluid" alt="">
+                </div>
+                <div>
+                    <img src="img/c9.png" width="200" height="150" class="img-fluid" alt="">
+                </div>
+                <div>
+                    <img src="img/c10.png" width="200" height="150" class="img-fluid" alt="">
+                </div>
+                <div>
+                    <img src="img/c11.png" width="200" height="150" class="img-fluid" alt="">
+                </div>
+                <div>
+                    <img src="img/c12.png" width="200" height="150" class="img-fluid" alt="">
+                </div>
+                <div>
+                    <img src="img/c13.png" width="200" height="150" class="img-fluid" alt="">
+                </div>
+                <div>
+                    <img src="img/c14.png" width="200" height="150" class="img-fluid" alt="">
+                </div>
+                <div>
+                    <img src="img/c15.png" width="200" height="150" class="img-fluid" alt="">
+                </div>
+                <div>
+                    <img src="img/c16.png" width="200" height="150" class="img-fluid" alt="">
+                </div>
+                <div>
+                    <img src="img/c17.png" width="200" height="150" class="img-fluid" alt="">
+                </div>
+                <div>
+                    <img src="img/c18.png" width="200" height="150" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Client Section -->
+
+    <!-- Start Projects Section -->
+    <div class="projects py-5" id="projects">
+        <div class="container">
+            <h2 class="mb-5 font-weight-bold text-center">Our Projects</h2>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="project">
+                        <img src="img/project1.jpg" alt="" class="img-fluid">
+                        <div class="project-details">
+                            <h2>Name</h2>
+                            <p>description</p>
+                            <a href="#" class="btn btn-warning">View Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project">
+                        <img src="img/project1.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project">
+                        <img src="img/project1.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Projects Section -->
+
+    <!-- Start Footer Section -->
+    <footer class="page-footer font-small stylish-color-dark pt-4">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-4 mx-auto">
+
+                    <!-- Content -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Footer Content</h5>
+                    <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+                        consectetur
+                        adipisicing elit.</p>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-2 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-2 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-2 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <hr>
+
+        <!-- Social buttons -->
+        <ul class="social list-unstyled list-inline text-center">
+            <li class="list-inline-item">
+                <a class="btn-floating btn-fb mx-1">
+                    <i class="fab fa-facebook-f"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-tw mx-1">
+                    <i class="fab fa-twitter"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-gplus mx-1">
+                    <i class="fab fa-google-plus-g"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-li mx-1">
+                    <i class="fab fa-linkedin-in"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-dribbble mx-1">
+                    <i class="fab fa-dribbble"> </i>
+                </a>
+            </li>
+        </ul>
+        <!-- Social buttons -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="#"> LEMONAI.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- End Footer Section -->
+
+    <script src="js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- slick slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script>
+        // init slick slider
+        $('.clients .clients-list').slick({
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            autoplay: true,
+            autoplaySpeed: 2000
+        });
+    </script>
+    <!-- mixitmixer plugin -->
+    <script src="js/mixitup.js"></script>
+    <!-- WOW animation plugin -->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <script src="js/typed.min.js"></script>
+
+    <script>
+        var typed = new Typed('#typed', {
+            // Waits 1000ms after typing "First"
+            strings: ['Simple.', '^1000 Pure JS.', 'Pretty.', 'Fun!', '^1000 nerdy'],
+            startDelay: 500,
+            typeSpeed: 40,
+            shuffle: true,
+            backDelay: 700,
+            loop: true
+        });
+    </script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

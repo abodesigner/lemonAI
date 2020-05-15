@@ -1,0 +1,313 @@
+/*
+  Theme Name   : LemonAll
+  Front End Developer : Mohammed Abo Salem
+  Website URL  : ""
+  Version      : 0.0.1
+
+  ===============
+  ** Structure **
+  ===============
+
+  1- FONT & COLORS USED.
+  2- Global Styles.
+  3- Home Page
+      1- Home Section
+      2- Features Section
+      3- AboutUs Section
+      4- Remember Section
+      5- Footer Section
+
+
+
+*/
+
+/**
+ * Smooth scrolling on the whole document
+ */
+ html {
+	scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+.custom-nav{
+  padding-top: 100px;
+}
+
+/* FONT USED */
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Regular.ttf) format("truetype");
+}
+
+/* COLORS USED
+==============
+YELLOEW : #fed401
+bLUE    : #004672
+*/
+
+/* Start Home Section */
+.home-section{
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.navbar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.navbar-light .navbar-nav .nav-item{
+  padding: 0 15px;
+}
+.navbar-light .navbar-nav .nav-link{
+  color: #004672;
+  font-family: "Montserrat";
+  font-size: 18px;
+  transition: all 0.6s ease-in-out;
+}
+
+.navbar-light .navbar-nav .nav-link:after{
+  content: '';
+  display: block;
+  margin: auto;
+  height: 2px;
+  width: 0px;
+  background: #fed401;
+  transition: all .5s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover:after{
+  width: 100%;
+}
+
+.custom-navbar{
+  background: #fff;
+}
+
+.video-container{
+  position: absolute;
+  top:88px;
+  left: 0;
+  right: 0;
+  bottom:0;
+  width: 100%;
+  height: 100%;
+
+}
+
+.video-container video{
+  width: auto;
+  height: auto;
+}
+
+.dark-overlay{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content{
+  width: 100%;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+
+.content h1, p{
+  font-family: 'Montserrat';
+}
+
+.content h1{
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.content p{
+  font-size: 1.5rem;
+}
+
+.home-section .btn-warning{
+  background-color: #fed401;
+  border-color: #fed401;
+  text-transform: capitalize;
+  color: #004672;
+  border-radius: 0;
+  padding: 15px 10px;
+  font-family:'Montserrat';
+}
+
+.home-section #readmore{
+  color: #fff;
+  border-color: #fff;
+  border-radius: 0;
+  padding: 10px 20px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+/* End Home Section */
+
+/* Start Our-Story Section */
+.aboutus{
+  min-height: 300px;
+}
+
+.aboutus h2{
+  color: #004672;
+  font-family:'Montserrat';
+  font-size: 3rem;
+}
+
+.aboutus p{
+  color: #004672;
+  font-size: 20px;
+  text-align: left;
+}
+
+.aboutus button.btn-warning{
+  background-color: #fed401;
+  border-color: #fed401;
+  color: #004672;
+  border-radius: 0;
+  padding: 15px 10px;
+  font-family:'Montserrat';
+}
+/* End Our-Story Section */
+
+/* Start Services Section */
+.services{
+  min-height: 600px;
+}
+.services h2{
+  color: #004672;
+  font-size: 3rem;
+  font-family:'Montserrat';
+  font-weight: bold;
+}
+
+.services h4{
+  color: #004672;
+  font-family:'Montserrat';
+
+}
+.services p{
+  color: #333;
+  text-align: justify;
+}
+
+.our-clients button{
+  border-radius: 0;
+}
+
+.our-clients button:hover{
+  background-color: #fed401;
+  border-color: #fed401;
+}
+
+.btn-outline-blue{
+  color: #004672;
+  border-color: #004672;
+}
+
+.btn-outline-blue:hover{
+  background-color: #004672;
+  color: #fff;
+}
+/* End Services Section */
+
+/* Start Clients */
+.clients{
+  min-width: 500px;
+}
+/* End Clients */
+
+/* Start Projects */
+.projects{
+  min-height: 600px;
+
+}
+.project img{
+  position: relative;
+  overflow: hidden;
+}
+
+.project-details{
+  position: absolute;
+  top: 0;
+  left: 15px;
+  right: 15px;
+  bottom: 0;
+  padding-top: 50px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: none;
+  height: 0;
+}
+
+
+.project:hover .project-details{
+  display: block;
+  height: 100%;
+}
+
+
+/* End Projects */
+
+
+/* Start Footer */
+.page-footer{
+  background-color: #1c2331;
+  color: #fff;
+}
+
+.clients h2{
+  color: #004672;
+}
+
+.social{
+
+}
+/* End Footer */
+
+/* Start OurStory Page */
+.ourStory .team{
+  display: none;
+  position:fixed;
+  top:0px;
+  left:0px;
+  margin:0;
+  padding:0;
+	width:100%;
+  height:100%;
+  z-index:9999;
+}
+
+.ourStory .team-content{
+    position:relative;
+    overflow: hidden;
+    background-color:yellowgreen;
+    margin: 100px auto 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+.ourStory h2{
+  color: #004672;
+}
+/* End OurStory Page */
+

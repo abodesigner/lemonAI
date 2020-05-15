@@ -1,0 +1,28 @@
+/* 575px and Below  */
+@media (max-width: 575px){
+    .news-section .card{
+        margin-bottom: 20px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px){
+    .statistic-block ..statistics-section{
+        margin-bottom: 40px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}

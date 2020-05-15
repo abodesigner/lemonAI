@@ -1,0 +1,296 @@
+// Start main colors
+$color1: #e44b37;
+$color2: #d74a2e;
+$color3: #e7643a;
+$color4: #ca3423;
+$color5: #e8663b;
+
+$dark-grey: #363636;
+$light-grey: #575757;
+$white-color: #fff;
+$black-color: #000;
+$fb-color: #3b5999;
+$tw-color: #55acee;
+$lin-color: #0077b5;
+$prest-color: #bd081c;
+
+// Start Fonts
+$enFont: "corbel";
+
+@font-face {
+  font-family: "corbel";
+  src: url(../fonts/CORBEL.TTF) format("truetype");
+}
+
+/* START GLOBAL STYLES */
+.active {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+a {
+  color: #aeb0ab;
+}
+
+a:hover {
+  text-decoration: none;
+  color: $white-color;
+}
+
+.fb {
+  color: $fb-color;
+}
+.tw {
+  color: $tw-color;
+}
+.lin {
+  color: $lin-color;
+}
+
+.prest {
+  color: $prest-color;
+}
+
+h2:after {
+  content: "";
+  display: block;
+  height: 20px;
+  background: url(../img/delimiter.png) no-repeat;
+  background-position: center bottom;
+}
+
+ul {
+  li {
+    list-style-type: none;
+  }
+}
+/* END GLOBAL STYLES */
+
+/* Start Home Section */
+.home-section {
+  position: relative;
+  overflow: hidden;
+}
+
+/* START NAVBAR */
+.navbar {
+  .navbar-nav {
+    .nav-item {
+      line-height: 2;
+    }
+  }
+}
+
+.navbar {
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        font-size: 18px;
+        color: $ligh-grey;
+        font-family: $enFont;
+      }
+    }
+  }
+}
+
+.navbar {
+  .navbar-nav {
+    .nav-item {
+      .nav-link:hover {
+        color: $color1;
+        font-weight: bold;
+        background-color: #f6f6f6;
+      }
+    }
+  }
+}
+
+/* START SLIDER */
+.main-slider {
+  max-height: calc(100vh - 60px);
+  overflow: hidden;
+}
+.main-slider {
+  .carousel-caption {
+    width: 45%;
+    position: absolute;
+    top: 20%;
+    bottom: 30%;
+    text-align: left;
+  }
+}
+.main-slider {
+  .carousel-caption {
+    h1 {
+      font-size: 48px;
+      color: $color1;
+      font-family: $enFont;
+      font-weight: bold;
+    }
+  }
+}
+
+.main-slider {
+  .carousel-caption {
+    p {
+      font-size: 24px;
+      font-family: "corbel";
+      color: $dark-grey;
+    }
+  }
+}
+
+.main-slider {
+  .carousel-caption {
+    button.btn-danger {
+      background-color: $color1;
+      border-color: $color1;
+    }
+  }
+}
+/* End Home Section */
+
+/* Start Services Section */
+.services-section {
+  min-height: 700px;
+  background: url(../img/services-bg.png) no-repeat;
+  background-attachment: fixed;
+  background-position: center bottom;
+}
+
+.services-section {
+  h2 {
+    font-size: 2.25rem;
+    color: $black-color;
+  }
+}
+
+.services-section {
+  h2:after {
+    margin-bottom: 110px;
+  }
+}
+/* End Services Section */
+
+/* Start verview Section */
+.overview-section {
+  min-height: 400px;
+  background: url(../img/overview-bg.png) no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.overview-section {
+  h2:after {
+    margin-bottom: 46px;
+  }
+}
+.overview-section {
+  p {
+    text-align: justify;
+  }
+}
+/* End verview Section */
+
+/* Start Excutives Section */
+.excutives-section {
+  min-height: 500px;
+}
+
+.excutives-section {
+  h2 {
+    margin-bottom: 41px;
+  }
+}
+
+.right-side {
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+}
+/* End Excutives Section */
+
+/* Start Statistices Section */
+.statistics-section {
+  min-height: 400px;
+  background: url(../img/statistices-bg.png) no-repeat;
+  background-size: cover;
+}
+
+.statistics-section {
+  h2:after {
+    margin-bottom: 74px;
+  }
+}
+
+.counter {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+/* End Statistices Section */
+
+/* Start News Section */
+.news-section {
+  h2:after {
+    margin-bottom: 46px;
+  }
+}
+.news-section {
+  .btn-danger {
+    background-color: $color3;
+    border-color: $color3;
+  }
+}
+/* End News Section */
+
+/* Start Partners */
+.partners-section {
+  min-height: 400px;
+  background-color: $color3;
+}
+
+.partners-section {
+  h2:after {
+    background: url(../img/white-delimiter.png) no-repeat;
+    background-position: center bottom;
+    margin-bottom: 46px;
+  }
+}
+
+/* Start Footer */
+.footer {
+  min-height: 400px;
+  background-color: $dark-grey;
+}
+
+.item {
+  padding: 10px;
+}
+
+.footer {
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid $light-grey;
+    padding: 0;
+  }
+}
+
+.search-box {
+  .input-group {
+    .input-group-append {
+      .input-group-text {
+        background-color: $color5;
+        border-color: $color5;
+        color: $white-color;
+      }
+    }
+  }
+}
