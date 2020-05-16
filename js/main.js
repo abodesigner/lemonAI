@@ -3,22 +3,29 @@ $(document).ready(function () {
   let date = new Date();
   $("#year").text(date.getFullYear());
 
-  $("#readmore").click(function () {
-    $('html,body').animate({
-      scrollTop: $(".aboutus").offset().top
-    },
-      'slow');
-  });
+  // $("#readmore").click(function () {
+  //   $('html,body').animate({
+  //     scrollTop: $(".aboutus").offset().top
+  //   },
+  //     'slow');
+  // });
 
 
-  // smooth scroll
-  $("a[href^='#']").on("click", function (e) {
-    e.preventDefault();
-    var target = $(this).attr('href');
-    $('html, body').animate({
-      scrollTop: $(target).offset().top
+  // smooth scroll [href*='#']
+  $(".navbar .navbar-nav .nav-item .nav-link").on("click", function (e) {
+
+    if (this.hash !== "") {
+
+      e.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, 'linear');
     }
-      , 500);
+
   });
 
 
@@ -28,12 +35,10 @@ $(document).ready(function () {
 
 
     if ($("#content").hasClass("hide")) {
-      $("#content").addClass("d-grid");
-      $("#content").removeClass("hide");
-    } else {
-      $("#content").removeClass("d-grid");
-      $("#content").addClass("hide");
+      $("#content").addClass("d-grid").removeClass("hide");
 
+    } else {
+      $("#content").removeClass("d-grid").addClass("hide");
 
     }
 

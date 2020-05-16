@@ -321,6 +321,10 @@ bLUE    : #004672
   transform: rotate(360deg);
   cursor: pointer;
 }
+.footer-copyright span a{
+  color: #fed401;
+  font-weight: bold;
+}
 /* End Footer */
 
 /* Start OurStory Page */
