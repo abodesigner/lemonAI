@@ -14,7 +14,7 @@ $(document).ready(function () {
   // smooth scroll
   $("a[href^='#']").on("click", function (e) {
     e.preventDefault();
-    const target = $(this).attr('href');
+    var target = $(this).attr('href');
     $('html, body').animate({
       scrollTop: $(target).offset().top
     }
@@ -23,22 +23,27 @@ $(document).ready(function () {
 
 
 
-
-  // init mixitup
-  // let mixer = mixitup("#myContainer");
-
-
-
   // show team
-  $(".ourStory a").on("click", function (e) {
-    //$(".ourStory .team").fadeIn();
-    // $(".ourStory .team-content").animate({ marginTop: "-=100px" }, 1000);
+  $("#team").on("click", function () {
 
-    // var target = $(".ourStory");
 
-    // $(".ourStory .team-content").animate({ scrollTop: $(this).offset().top - 200 }, 1000);
+    if ($("#content").hasClass("hide")) {
+      $("#content").addClass("d-grid");
+      $("#content").removeClass("hide");
+    } else {
+      $("#content").removeClass("d-grid");
+      $("#content").addClass("hide");
 
-    e.preventDefult
+
+    }
+
+
+
+
+
+
+
+
 
   });
 

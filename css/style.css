@@ -242,6 +242,22 @@ bLUE    : #004672
 }
 /* End Clients */
 
+/* Start special-offer */
+.special-offer h2{
+  text-transform: capitalize;
+  font-family:'Montserrat';
+  font-size: 2rem;
+  font-weight: bold;
+  color: #004672;
+}
+
+.special-offer  p{
+  font-family:'Montserrat';
+  font-size: 1.125rem;
+  text-transform: capitalize;
+}
+/* End special-offer */
+
 /* Start Projects */
 .projects{
   min-height: 600px;
@@ -287,12 +303,23 @@ bLUE    : #004672
   color: #fff;
 }
 
-.clients h2{
-  color: #004672;
+.page-footer a{
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease;
 }
 
-.social{
+.page-footer a:hover{
+  color: #fed401
+}
 
+.social i{
+  transition: all 0.3s ease;
+
+}
+.social i:hover{
+  transform: rotate(360deg);
+  cursor: pointer;
 }
 /* End Footer */
 
@@ -309,17 +336,73 @@ bLUE    : #004672
   z-index:9999;
 }
 
-.ourStory .team-content{
+.team-content{
     position:relative;
     overflow: hidden;
-    background-color:yellowgreen;
-    margin: 100px auto 0 auto;
+    /* margin: 100px auto 0 auto; */
     width: 100%;
     height: 100%;
+}
+
+
+
+.team-gallery{
+  width: 50%;
+  height: 100%;
+  background-color:yellowgreen;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+}
+
+.d-grid{
+  display:grid;
+  grid-template-columns: 300px 200px 300px 200px;
+}
+
+.gallery{
+  display: "none";
+}
+
+.hide{
+  display: none;
 }
 
 .ourStory h2{
   color: #004672;
 }
 /* End OurStory Page */
+
+/* Start Digital Marketing Page */
+.marketing-service{
+
+}
+
+.service-quote{
+  border-left: 15px solid #fed401;
+  padding-left: 15px;
+
+
+}
+
+.service-quote h4{
+  color: #fed401;
+}
+
+.service-quote h2{
+  color:#004672
+}
+
+.service-quote h2 span{
+  color: #fed401;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+
+.d-service .media .media-body h5{
+  color:#004672
+}
+/* End Digital Marketing Page */
 
