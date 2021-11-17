@@ -43,9 +43,6 @@
 
     <!-- Start Home Section -->
     <section class="home-section" id="home">
-
-
-
         <!-- Start Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
 
@@ -163,7 +160,6 @@
 
         <!-- Start Video Background -->
         <div class="video-container">
-
             <video autoplay loop muted>
                 <source src="lemon.mp4" type="video/mp4" />
             </video>
@@ -173,7 +169,7 @@
                 <p>LemonAI Agency Is More Powerful</p>
 
                 <p><span id="typed"></span></p>
-                <button id="readmore" class="btn btn-outline-warning mt-5">read more</button>
+                <!-- <button id="readmore" class="btn btn-outline-warning mt-5">read more</button> -->
             </div>
 
         </div>
@@ -184,18 +180,17 @@
     <!-- Start AboutUs Section -->
     <div class="aboutus py-5 bg-light">
         <div class="container">
-            <div class="d-flex justify-content-around">
-
-                <h2 class="text-capitalize font-weight-bold">what <br> is <br>lemonAI<span
-                        style="color: #fed401">?</span> </h2>
-
-                <div class="d-flex flex-column align-items-end">
-                    <p class="story lead ml-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="text-capitalize font-weight-bold">what <br> is <br>lemonAI<span
+                            style="color: #fed401">?</span> </h2>
+                </div>
+                <div class="col-md-8">
+                    <p class="story lead">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ratione laudantium eum porro
                         facere. Error iure blanditiis soluta! Sit, natus, sequi modi autem incidunt hic magni maiores
                         maxime molestiae ullam repudiandae recusandae officiis repellat consequatur delectus vitae
                         laborum et velit corrupti voluptatum? In, quo architecto.
-
                     </p>
 
                     <button class="btn btn-warning text-capitalize">live the dream</button>
@@ -215,7 +210,7 @@
                         <div class="card shadow border-0 rounded-0">
                             <div class="card-body">
                                 <img src="img/marketing_icon.png" width="100px" alt="Digital Marketing"
-                                    class="img-fluid">
+                                    class="img-fluid d-none d-md-block">
                                 <h4 class="card-title text-capitalize mt-5">digital marketing</h4>
                                 <p class="card-text">Digital marketing is the component of marketing that utilizes
                                     internet and online based digital technologies.</p>
@@ -229,7 +224,7 @@
                         <div class="card shadow border-0 rounded-0">
                             <div class="card-body">
                                 <img src="img/software_icon.png" width="100px" alt="Digital Marketing"
-                                    class="img-fluid">
+                                    class="img-fluid d-none d-md-block">
                                 <h4 class="card-title text-capitalize mt-5">software services</h4>
                                 <p class="card-text">Digital marketing is the component of marketing that utilizes
                                     internet and online based digital technologies.</p>
@@ -243,7 +238,7 @@
                         <div class="card shadow border-0 rounded-0">
                             <div class="card-body">
                                 <img src="img/security_icon.png" width="100px" alt="Digital Marketing"
-                                    class="img-fluid">
+                                    class="img-fluid d-none d-md-block">
                                 <h4 class="card-title text-capitalize mt-5">cyber security</h4>
                                 <p class="card-text">Digital marketing is the component of marketing that utilizes
                                     internet and online based digital technologies.</p>
@@ -257,7 +252,7 @@
                         <div class="card shadow border-0 rounded-0">
                             <div class="card-body">
                                 <img src="img/creative_icon.png" width="100px" alt="Digital Marketing"
-                                    class="img-fluid">
+                                    class="img-fluid d-none d-md-block">
                                 <h4 class="card-title text-capitalize mt-5">Creative Services</h4>
                                 <p class="card-text">Digital marketing is the component of marketing that utilizes
                                     internet and online based digital technologies.</p>
@@ -330,7 +325,10 @@
                 <div>
                     <img src="img/clients_logos/c18.png" width="200" height="150" class="img-fluid" alt="">
                 </div>
+
             </div>
+
+
         </div>
     </div>
     <!-- End Client Section -->
@@ -589,18 +587,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <!-- <script src="js/bootstrap.min.js"></script> -->
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <!-- slick slider -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-    <script>
-        // init slick slider
-        $('.clients .clients-list').slick({
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            autoplay: true,
-            autoplaySpeed: 2000
-        });
-    </script>
     <!-- mixitmixer plugin -->
     <script src="js/mixitup.js"></script>
     <!-- WOW animation plugin -->
@@ -610,19 +599,6 @@
     </script>
 
     <script src="js/typed.min.js"></script>
-
-    <script>
-        var typed = new Typed('#typed', {
-            // Waits 1000ms after typing "First"
-            strings: ['Simple.', '^1000 Pure JS.', 'Pretty.', 'Fun!', '^1000 nerdy'],
-            startDelay: 500,
-            typeSpeed: 40,
-            shuffle: true,
-            backDelay: 700,
-            loop: true
-        });
-    </script>
-
     <script src="js/main.js"></script>
 </body>
 
