@@ -7,13 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- Description Meta Attribute -->
-    <meta name="description" content="lemonAll For Digital & software services" />
+    <meta name="description" content="lemonAI For Digital & software services" />
 
     <!-- Keywords Meta Attribute -->
     <meta name="keywords" content="degital, marketing, lemonAll, software services, cyber security" />
 
     <!-- title -->
-    <title>lemonAll</title>
+    <title>lemonAI</title>
 
     <!-- bootstrap css file -->
     <link rel="stylesheet" href="css/bootstrap.css" />
@@ -43,6 +43,8 @@
 
     <!-- Start Home Section -->
     <section class="home-section" id="home">
+
+
 
         <!-- Start Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
@@ -89,77 +91,75 @@
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
                     <!-- Button trigger modal -->
-                    <button class="btn btn-warning my-2 my-sm-0" type="button" data-toggle="modal"
+                    <button class="btn btn-warning my-2 my-sm-0 d-none d-md-block" type="button" data-toggle="modal"
                         data-target="#modalForm">Request a Quote</button>
                 </form>
-
-                <!-- Modal -->
-                <div class="modal fade" id="modalForm">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-
-                            <div class="modal-header">
-                                <h5 class="modal-title text-capitalize">tell us what you need</h5>
-                                <button type=" button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-
-                            <div class="modal-body">
-                                <form action="#" method="POST">
-                                    <div class="form-row">
-
-                                        <div class="form-group col-md-6">
-                                            <label for="name">Name:</label>
-                                            <input type="text" class="form-control" name="name" id="name">
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <label for="email">Email:</label>
-                                            <input type="email" class="form-control" name="email" id="email">
-                                        </div>
-                                    </div>
-                                    <div class="form-row">
-
-                                        <div class="form-group col-md-6">
-                                            <label for="phone">Phone Number:</label>
-                                            <input type="text" class="form-control" name="phone" id="phone">
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <label for="company-name">Company Name:</label>
-                                            <input type="text" class="form-control" name="company-name"
-                                                id="company-name" placeholder="">
-                                        </div>
-                                        <div class="form-group col-md-12">
-                                            <label for="company-website">Website:</label>
-                                            <input type="text" class="form-control" name="company-website"
-                                                id="company-website" placeholder="http:www.example.com">
-                                        </div>
-                                        <div class="form-group col-md-12">
-                                            <label for="company-website">Can you tell your dream?:</label>
-                                            <textarea name="message" id="message" class="form-control"></textarea>
-                                        </div>
-                                        <div class="form-group form-check">
-                                            <input type="checkbox" class="form-check-input" id="subscribe">
-                                            <label class="form-check-label" for="subscribe">
-                                                Subscribe to our newsletter,
-                                                we share some useful tips and tricks for your business!</label>
-                                        </div>
-
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-outline-blue">Save changes</button>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
             </div>
-
         </nav>
         <!-- End Navbar -->
 
+        <!-- Modal -->
+        <div class="modal fade" id="modalForm">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title text-capitalize">tell us what you need</h5>
+                        <button type=" button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form action="#" method="POST">
+                            <div class="form-row">
+
+                                <div class="form-group col-md-6">
+                                    <label for="name">Name:</label>
+                                    <input type="text" class="form-control" name="name" id="name">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="email">Email:</label>
+                                    <input type="email" class="form-control" name="email" id="email">
+                                </div>
+                            </div>
+                            <div class="form-row">
+
+                                <div class="form-group col-md-6">
+                                    <label for="phone">Phone Number:</label>
+                                    <input type="text" class="form-control" name="phone" id="phone">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="company-name">Company Name:</label>
+                                    <input type="text" class="form-control" name="company-name" id="company-name"
+                                        placeholder="">
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <label for="company-website">Website:</label>
+                                    <input type="text" class="form-control" name="company-website" id="company-website"
+                                        placeholder="http:www.example.com">
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <label for="company-website">Can you tell your dream?:</label>
+                                    <textarea name="message" id="message" class="form-control"></textarea>
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="subscribe">
+                                    <label class="form-check-label" for="subscribe">
+                                        Subscribe to our newsletter,
+                                        we share some useful tips and tricks for your business!</label>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-blue">Save changes</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
 
         <!-- Start Video Background -->
         <div class="video-container">
@@ -212,11 +212,11 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="service text-center">
-                        <div class="card shadow">
+                        <div class="card shadow border-0 rounded-0">
                             <div class="card-body">
                                 <img src="img/marketing_icon.png" width="100px" alt="Digital Marketing"
                                     class="img-fluid">
-                                <h4 class="card-title text-capitalize mb-3">digital marketing</h4>
+                                <h4 class="card-title text-capitalize mt-5">digital marketing</h4>
                                 <p class="card-text">Digital marketing is the component of marketing that utilizes
                                     internet and online based digital technologies.</p>
                                 <a href="digital-marketing.html" class="btn btn-outline-blue">read more</a>
@@ -226,11 +226,11 @@
                 </div>
                 <div class="col-md-3">
                     <div class="service text-center">
-                        <div class="card shadow">
+                        <div class="card shadow border-0 rounded-0">
                             <div class="card-body">
                                 <img src="img/software_icon.png" width="100px" alt="Digital Marketing"
                                     class="img-fluid">
-                                <h4 class="card-title text-capitalize mb-3">software services</h4>
+                                <h4 class="card-title text-capitalize mt-5">software services</h4>
                                 <p class="card-text">Digital marketing is the component of marketing that utilizes
                                     internet and online based digital technologies.</p>
                                 <a href="software.html" class="btn btn-outline-blue">read more</a>
@@ -240,11 +240,11 @@
                 </div>
                 <div class="col-md-3">
                     <div class="service text-center">
-                        <div class="card shadow">
+                        <div class="card shadow border-0 rounded-0">
                             <div class="card-body">
                                 <img src="img/security_icon.png" width="100px" alt="Digital Marketing"
                                     class="img-fluid">
-                                <h4 class="card-title text-capitalize mb-3">cyber security</h4>
+                                <h4 class="card-title text-capitalize mt-5">cyber security</h4>
                                 <p class="card-text">Digital marketing is the component of marketing that utilizes
                                     internet and online based digital technologies.</p>
                                 <a href="cyber-security.html" class="btn btn-outline-blue">read more</a>
@@ -254,11 +254,11 @@
                 </div>
                 <div class="col-md-3">
                     <div class="service text-center">
-                        <div class="card shadow">
+                        <div class="card shadow border-0 rounded-0">
                             <div class="card-body">
                                 <img src="img/creative_icon.png" width="100px" alt="Digital Marketing"
                                     class="img-fluid">
-                                <h4 class="card-title text-capitalize mb-3">Creative Services</h4>
+                                <h4 class="card-title text-capitalize mt-5">Creative Services</h4>
                                 <p class="card-text">Digital marketing is the component of marketing that utilizes
                                     internet and online based digital technologies.</p>
                                 <a href="creative.html" class="btn btn-outline-blue">read more</a>
@@ -362,68 +362,71 @@
             <h2 class="mb-5 font-weight-bold text-center">Our Projects</h2>
 
             <div class="row mb-4">
-                <div class="col-md-4">
+                <div class="col-md-4 col-6">
                     <div class="project">
-                        <img src="img/project1.jpg" alt="" class="img-fluid">
-                        <div class="project-details">
-                            <h3>LemonAI</h3>
-                            <p>Software House</p>
-                            <a href="#" class="btn btn-warning">View Demo</a>
+                        <div class="hover-effect">
+                            <img src="img/project1.jpg" alt="" class="img-fluid">
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-6">
                     <div class="project">
-                        <img src="img/project2.jpg" alt="" class="img-fluid">
+                        <div class="hover-effect">
+                            <img src="img/project3.jpg" alt="" class="img-fluid">
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-6">
                     <div class="project">
-                        <img src="img/project1.jpg" alt="" class="img-fluid">
+                        <div class="hover-effect">
+                            <img src="img/project2.jpg" alt="" class="img-fluid">
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="row mb-4">
-                <div class="col-md-4">
+                <div class="col-md-4 col-6">
                     <div class="project">
-                        <img src="img/project2.jpg" alt="" class="img-fluid">
-                        <div class="project-details">
-                            <h3>Name</h3>
-                            <p>description</p>
-                            <a href="#" class="btn btn-warning">View Demo</a>
+                        <div class="hover-effect">
+                            <img src="img/project4.jpg" alt="" class="img-fluid">
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-6">
                     <div class="project">
-                        <img src="img/project1.jpg" alt="" class="img-fluid">
+                        <div class="hover-effect">
+                            <img src="img/project1.jpg" alt="" class="img-fluid">
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-6">
                     <div class="project">
-                        <img src="img/project2.jpg" alt="" class="img-fluid">
+                        <div class="hover-effect">
+                            <img src="img/project4.jpg" alt="" class="img-fluid">
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="row mb-4">
-                <div class="col-md-4">
+                <div class="col-md-4 col-6">
                     <div class="project">
-                        <img src="img/project2.jpg" alt="" class="img-fluid">
-                        <div class="project-details">
-                            <h3>Name</h3>
-                            <p>description</p>
-                            <a href="#" class="btn btn-warning">View Demo</a>
+                        <div class="hover-effect">
+                            <img src="img/project3.jpg" alt="" class="img-fluid">
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-6">
                     <div class="project">
-                        <img src="img/project1.jpg" alt="" class="img-fluid">
+                        <div class="hover-effect">
+                            <img src="img/project2.jpg" alt="" class="img-fluid">
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-6">
                     <div class="project">
-                        <img src="img/project2.jpg" alt="" class="img-fluid">
+                        <div class="hover-effect">
+                            <img src="img/project1.jpg" alt="" class="img-fluid">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -448,7 +451,9 @@
                     <h5 class="font-weight-bold text-uppercase mt-3 mb-4">
                         <img src="img/logo.png" class="img-fluid" width="250px" alt="">
                     </h5>
-                    <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+                    <p class="text-muted">Here you can use rows and columns to organize your footer content. Lorem
+                        ipsum
+                        dolor sit amet,
                         consectetur
                         adipisicing elit.</p>
 
@@ -461,7 +466,7 @@
                 <div class="col-md-2 mx-auto">
 
                     <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Main Links</h5>
+                    <h5 class="text-white font-weight-bold text-uppercase mt-3 mb-4">Main Links</h5>
 
                     <ul class="list-unstyled">
                         <li>
@@ -487,7 +492,7 @@
                 <div class="col-md-2 mx-auto">
 
                     <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Quick Links</h5>
+                    <h5 class="text-white font-weight-bold text-uppercase mt-3 mb-4">Quick Links</h5>
 
                     <ul class="list-unstyled">
                         <li>
@@ -513,7 +518,7 @@
                 <div class="col-md-2 mx-auto">
 
                     <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Additional</h5>
+                    <h5 class="text-white font-weight-bold text-uppercase mt-3 mb-4">Additional</h5>
 
                     <ul class="list-unstyled">
                         <li>
@@ -545,34 +550,34 @@
         <ul class="social list-unstyled list-inline text-center">
             <li class="list-inline-item">
                 <a class="btn-floating btn-fb mx-1">
-                    <i class="fab fa-facebook-f fa-2x"> </i>
+                    <i class="fab fa-facebook-f"> </i>
                 </a>
             </li>
             <li class="list-inline-item">
                 <a class="btn-floating btn-tw mx-1">
-                    <i class="fab fa-twitter fa-2x"> </i>
+                    <i class="fab fa-twitter"> </i>
                 </a>
             </li>
             <li class="list-inline-item">
                 <a class="btn-floating btn-gplus mx-1">
-                    <i class="fab fa-google-plus-g fa-2x"> </i>
+                    <i class="fab fa-google-plus-g"> </i>
                 </a>
             </li>
             <li class="list-inline-item">
                 <a class="btn-floating btn-li mx-1">
-                    <i class="fab fa-linkedin-in fa-2x"> </i>
+                    <i class="fab fa-linkedin-in"> </i>
                 </a>
             </li>
             <li class="list-inline-item">
                 <a class="btn-floating btn-dribbble mx-1">
-                    <i class="fab fa-dribbble fa-2x"> </i>
+                    <i class="fab fa-dribbble"> </i>
                 </a>
             </li>
         </ul>
         <!-- Social buttons -->
 
         <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© Copyright are reserved to
+        <div class="text-light footer-copyright text-center py-3">© Copyright are reserved to
             <span><a href="#"> LEMONAI</a></span>
         </div>
         <!-- Copyright -->
@@ -582,7 +587,9 @@
 
     <script src="js/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <!-- slick slider -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script>

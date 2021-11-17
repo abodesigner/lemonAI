@@ -3,12 +3,12 @@ $(document).ready(function () {
   let date = new Date();
   $("#year").text(date.getFullYear());
 
-  // $("#readmore").click(function () {
-  //   $('html,body').animate({
-  //     scrollTop: $(".aboutus").offset().top
-  //   },
-  //     'slow');
-  // });
+  $("#readmore").click(function () {
+    $('html,body').animate({
+      scrollTop: $(".aboutus").offset().top
+    },
+      'slow');
+  });
 
 
   // smooth scroll [href*='#']
